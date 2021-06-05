@@ -1,41 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang=zh-CN>
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    main{
-      width: 500px;
-      height: 500px;
-      border: 1px solid yellow;
-      overflow-y: scroll;
-    }
-    div{
-      width: 400px;
-      height: 2000px;
-      border: 1px solid blue;
-
-    }
-
-
-
-  </style>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <link rel=icon href=favicon.ico>
+  <link rel=apple-touch-icon sizes=180x180 href=./static/icons/apple-touch-icon.png>
+  <link rel=icon type=image/png sizes=32x32 href=./static/icons/favicon-32x32.png>
+  <link rel=icon type=image/png sizes=16x16 href=./static/icons/favicon-16x16.png>
+  <link rel=mask-icon href=./static/icons/safari-pinned-tab.svg color=#1e3264>
+  <link rel="shortcut icon" href=./static/icons/favicon.ico>
+  <meta name=apple-mobile-web-app-title content="High Music Player">
+  <meta name=application-name content="High Music Player">
+  <meta name=theme-color content=#1e3264>
+  <meta name=Description content="High Music Player">
+  <meta property=og:title content="High Music Player">
+  <meta property=og:description content="High Music Player">
+  <meta property=og:url content=http://playermusic.gitee.io>
+  <meta property=og:image content=http://ww1.sinaimg.cn/large/006m5eW2ly1g53sht1p5vj30xc0hi4qq.jpg>
+  <title>Higher-Music</title>
+  <link href="https://fonts.loli.net/icon?family=Material+Icons" rel=stylesheet>
+  <link href="https://fonts.loli.net/css?family=Roboto:500" rel=stylesheet>
+  <link rel=stylesheet href=https://cdn.bootcss.com/vuetify/1.5.16/vuetify.min.css>
+  <script src=https://cdn.bootcss.com/vue/2.6.10/vue.min.js></script>
+  <script src=https://cdn.bootcss.com/vue-router/3.0.1/vue-router.min.js></script>
+  <script src=https://cdn.bootcss.com/vuex/3.0.1/vuex.min.js></script>
+  <script src=https://cdn.bootcss.com/axios/0.15.2/axios.min.js></script>
+  <script src=https://cdn.bootcss.com/vue-lazyload/1.3.2/vue-lazyload.js></script>
+  <script src=https://cdn.bootcss.com/vuetify/1.5.16/vuetify.min.js></script>
+  <link href=css/chunk-08d44f42.8b3ef62b.css rel=prefetch>
+  <link href=css/chunk-2067c4c8.dc59e60b.css rel=prefetch>
+  <link href=css/chunk-2223fe54.2edec596.css rel=prefetch>
+  <link href=css/chunk-35b1f376.ec921c96.css rel=prefetch>
+  <link href=css/chunk-39f2c77a.a6d88ae4.css rel=prefetch>
+  <link href=css/chunk-4d0e4a99.f6615274.css rel=prefetch>
+  <link href=css/chunk-dadef6c4.dc59e60b.css rel=prefetch>
+  <link href=css/chunk-db5afdca.dc59e60b.css rel=prefetch>
+  <link href=css/chunk-fce66398.825b94c8.css rel=prefetch>
+  <link href=js/chunk-08d44f42.402747f9.js rel=prefetch>
+  <link href=js/chunk-2067c4c8.394e4543.js rel=prefetch>
+  <link href=js/chunk-2223fe54.042acafd.js rel=prefetch>
+  <link href=js/chunk-35b1f376.c1dae1d0.js rel=prefetch>
+  <link href=js/chunk-39f2c77a.2f7638cd.js rel=prefetch>
+  <link href=js/chunk-4d0e4a99.d773cdb5.js rel=prefetch>
+  <link href=js/chunk-dadef6c4.e6befb96.js rel=prefetch>
+  <link href=js/chunk-db5afdca.b151d298.js rel=prefetch>
+  <link href=js/chunk-fce66398.7c099e08.js rel=prefetch>
+  <link href=css/app.ffa19e5e.css rel=preload as=style>
+  <link href=css/chunk-vendors.47701912.css rel=preload as=style>
+  <link href=js/app.e82222da.js rel=preload as=script>
+  <link href=js/chunk-vendors.21507472.js rel=preload as=script>
+  <link href=css/chunk-vendors.47701912.css rel=stylesheet>
+  <link href=css/app.ffa19e5e.css rel=stylesheet>
 </head>
-<body onload="load()">
-  <main>
-    <div>
 
-    </div>
-  </main>
-  <script>
-    function load(){
-      let dom = document.querySelector('main')
-      dom.addEventListener('scroll',(e)=>{
-        console.log(e,'event');
-      })
-    }
-  </script>
+<body><noscript><strong>We're sorry but Higher-Music doesn't work properly without JavaScript enabled. Please enable it
+      to continue.</strong></noscript>
+  <div id=app></div>
+  <script src=js/chunk-vendors.21507472.js></script>
+  <script src=js/app.e82222da.js></script>
 </body>
+
 </html>

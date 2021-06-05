@@ -16,27 +16,27 @@
  * 4.正常的开发任务 type直接用更方便直接一些
  */
 // 前端的业务开发中
-// interface IPriceData {
-//   id: number;
-//   m: string;
-// }
-// type IPriceDataArray = IPriceData[];
+interface IPriceData {
+  id: number;
+  m: string;
+}
+type IPriceDataArray = IPriceData[];
 
-// function getPriceData() {
-//   return new Promise<IPriceDataArray>((resolve, reject) => {
-//     fetch('url')
-//       .then(function (response) {
-//         return response.json();
-//       })
-//       .then(function (myJson) {
-//         const data: IPriceDataArray = [];
-//         resolve(data);
-//       });
-//   });
-// }
-// getPriceData().then((data) => {
-//   console.log(data[0].id);
-// });
+function getPriceData() {
+  return new Promise<IPriceDataArray>((resolve, reject) => {
+    fetch("url")
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (myJson) {
+        const data: IPriceDataArray = [];
+        resolve(data);
+      });
+  });
+}
+getPriceData().then((data) => {
+  console.log(data[0].id);
+});
 
 //nodejs BFF架构模式
 interface ClockConstructor {
@@ -48,12 +48,12 @@ interface ClockInterface {
 
 class DigitalClock implements ClockInterface {
   public tick(): void {
-    console.log('beep beep');
+    console.log("beep beep");
   }
 }
 class AnalogClock implements ClockInterface {
   public tick(): void {
-    console.log('ding ding');
+    console.log("ding ding");
   }
 }
 

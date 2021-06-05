@@ -1,11 +1,11 @@
 // //===========1.不知道类型是啥的时候===========
-// interface LengthWise {
-//   length: number;
-// }
-// function identity<T extends LengthWise>(arg: T): T {
-//   console.log(arg.length);
-//   return arg;
-// }
+interface LengthWise {
+  length: number;
+}
+function identity<T extends LengthWise>(arg: T): T {
+  console.log(arg.length);
+  return arg;
+}
 
 // const result = identity<string>('京程一灯');
 // console.log(result);
@@ -50,32 +50,32 @@ function getData<T>(value: T): T {
   return value;
 }
 getData<number>(123);
-getData<string>('京程一灯666');
+getData<string>("京程一灯666");
 
 //===========4.demo4 泛型接口===========
-// interface ConfigFn {
-//   <T>(value: T): void;
-// }
+interface ConfigFn {
+  <T>(value: T): void;
+}
 
-// const getData2: ConfigFn = function <T>(value: T): void {
-//   console.log(value);
-// };
-// getData2<string>('123');
+const getData2: ConfigFn = function <T>(value: T): void {
+  console.log(value);
+};
+getData2<string>("123");
 
 //===========5.demo5 动态泛型===========
-// interface Bookmark {
-//   msg: string;
-// }
-// class BookmarksService<T extends Bookmark> {
-//   items: T[] = [];
-// }
-// class BookmarksService2<T extends Bookmark = Bookmark> {
-//   items: T[] = [];
-// }
+interface Bookmark {
+  msg: string;
+}
+class BookmarksService<T extends Bookmark> {
+  items: T[] = [];
+}
+class BookmarksService2<T extends Bookmark = Bookmark> {
+  items: T[] = [];
+}
 // const s = new BookmarksService2<string>();
 // items = [
 //   {
-//     msg: '一灯',
+//     msg: "一灯",
 //   },
 // ];
 
